@@ -28,7 +28,7 @@
 
             <!--lista to do -->
             <div class="todos-container">
-                <ul class="todos-list">
+                <ul v-if="todoArrayList.length > 0" class="todos-list">
                     <li v-for="(todo, index) in todoArrayList">
                         {{ todo }}
                         <span class="delete" @click="removeItem(index)">
@@ -36,7 +36,9 @@
                         </span>
                     </li>
                 </ul>
+                <div v-else class="nothtodo">Non hai nulla da fare!</div>
             </div>
+            
             <!--lista to do -->
         </div>
     </div>
