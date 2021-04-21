@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.text-input {
+    padding: 10px 15px;
+    max-width: 300px;
+    border-radius: 10px;
+    border-width: 1px;
+    margin-right: 10px;
+}
+
+.new-todo {
+    text-align: center;
+    padding: 20px;
+}
+
+.btn {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+.todos-container {
+    background-color: #F5F7F7;
+    padding: 30px;
+}
+
+.todos-list {
+    list-style-type: none;
+
+}
+
+.todos-list li {
+    border-bottom: 1px solid grey;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.delete {
+    float: right;
+    cursor: pointer;
+}
