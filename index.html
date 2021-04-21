@@ -21,12 +21,12 @@
 
             <!--input-->
             <div class="new-todo">
-                <input class="text-input" type="text" placeholder="New ToDo">
-                <button class="btn">Aggiungi</button>
+                <input v-model="userTodo" @keyup.enter="addTodo" class="text-input" type="text" placeholder="New ToDo">
+                <button class="btn" @click="addTodo">Aggiungi</button>
             </div>
+            <!--input-->
 
             <!--lista to do -->
-
             <div class="todos-container">
                 <ul class="todos-list">
                     <li v-for="todo in todoArrayList">
@@ -37,17 +37,9 @@
                     </li>
                 </ul>
             </div>
-
-
+            <!--lista to do -->
         </div>
-
-
     </div>
-
-    
-
-
-
 
     
     <script type="text/javascript" src="js/script.js" ></script>

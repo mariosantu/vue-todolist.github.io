@@ -5,13 +5,19 @@ var app = new Vue( {
 	data: {
 		userTodo: '',
 		todoArrayList : [
-			'Fare la spespa',
+			'Fare la spesa',
 			'Fare i compiti',
 			'Fare il bucato'
 		],
 	},
 	methods : {
-	},
-	created() {
+		// function that add usertodo in todolist
+		addTodo() {
+			// add usertodo only if its not empty 
+			if( this.userTodo.length > 0 ) {
+				this.todoArrayList.push(this.userTodo);
+				this.userTodo = '';
+			}	
+		}
 	}
 })
