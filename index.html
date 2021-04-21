@@ -29,9 +29,9 @@
             <!--lista to do -->
             <div class="todos-container">
                 <ul class="todos-list">
-                    <li v-for="todo in todoArrayList">
+                    <li v-for="(todo, index) in todoArrayList">
                         {{ todo }}
-                        <span class="delete">
+                        <span class="delete" @click="removeItem(index)">
                             <i class="fa fa-times"></i>
                         </span>
                     </li>

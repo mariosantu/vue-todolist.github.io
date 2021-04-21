@@ -18,6 +18,13 @@ var app = new Vue( {
 				this.todoArrayList.push(this.userTodo);
 				this.userTodo = '';
 			}	
+		},
+
+		removeItem(index) {
+			this.todoArrayList.splice(index, 1);
 		}
+
+
+
 	}
 })
